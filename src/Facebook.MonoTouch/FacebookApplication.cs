@@ -7,7 +7,6 @@
 // <website>http://facebooksdk.codeplex.com</website>
 // ---------------------------------
 
-#define SILVERLIGHT
 
 namespace Facebook
 {
@@ -34,7 +33,7 @@ namespace Facebook
         public FacebookApplication()
         {
 
-#if !(SILVERLIGHT || WINRT)
+#if !(SILVERLIGHT || WINRT || MONOTOUCH)
             _current = FacebookConfigurationSection.Current;
 #endif
         }

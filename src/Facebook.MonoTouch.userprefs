@@ -1,6 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Facebook.MonoTouch/FacebookApplication.cs">
+    <Files>
+      <File FileName="Facebook.MonoTouch/FacebookClient.cs" Line="2045" Column="101" />
+      <File FileName="Facebook.MonoTouch/FacebookApplication.cs" Line="10" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
