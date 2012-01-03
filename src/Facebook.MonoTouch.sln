@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.MonoTouch", "Facebook.MonoTouch\Facebook.MonoTouch.csproj", "{F8712EC1-B188-4213-B7B5-68D3EC953C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.MonoTouch.Sample", "Facebook.MonoTouch.Sample\Facebook.MonoTouch.Sample.csproj", "{8512298F-2B94-428F-9075-48D6A851CAA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Debug|iPhone.Build.0 = Debug|iPhone
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Release|iPhone.ActiveCfg = Release|iPhone
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Release|iPhone.Build.0 = Release|iPhone
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{8512298F-2B94-428F-9075-48D6A851CAA3}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F8712EC1-B188-4213-B7B5-68D3EC953C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8712EC1-B188-4213-B7B5-68D3EC953C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8712EC1-B188-4213-B7B5-68D3EC953C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8712EC1-B188-4213-B7B5-68D3EC953C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Facebook.MonoTouch\Facebook.MonoTouch.csproj
+	EndGlobalSection
+EndGlobal
