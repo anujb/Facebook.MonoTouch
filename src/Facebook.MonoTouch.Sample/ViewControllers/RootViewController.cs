@@ -13,31 +13,13 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-using Facebook;
 
 namespace Facebook.MonoTouch.Sample
 {
-	[Register ("AppDelegate")]
-	public partial class AppDelegate : UIApplicationDelegate
+	public class RootViewController
 	{
-		UIWindow _Window;
-		FacebookRootViewController _RootViewController;
-
-		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+		public RootViewController()
 		{
-			_Window = new UIWindow(UIScreen.MainScreen.Bounds);
-			_RootViewController = new FacebookRootViewController();
-			_Window.RootViewController = _RootViewController;
-			
-			
-			
-			_Window.MakeKeyAndVisible();
-			
-			return true;
 		}
 	}
 }

@@ -60,6 +60,15 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\..\lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.MonoTouch">
+      <HintPath>..\..\lib\RestSharp.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog">
+      <HintPath>..\..\lib\MonoTouch.Dialog.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -67,6 +76,20 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewControllers\FacebookRootViewController.cs" />
+    <Compile Include="ViewControllers\LoginViewController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Elements\" />
+    <Folder Include="Views\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Facebook.MonoTouch\Facebook.MonoTouch.csproj">
+      <Project>{F8712EC1-B188-4213-B7B5-68D3EC953C6F}</Project>
+      <Name>Facebook.MonoTouch</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

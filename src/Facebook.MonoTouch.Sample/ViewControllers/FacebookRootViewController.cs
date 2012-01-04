@@ -13,32 +13,50 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using MonoTouch.Foundation;
 using MonoTouch.UIKit;
-using Facebook;
+using System.Collections.Generic;
 
 namespace Facebook.MonoTouch.Sample
 {
-	[Register ("AppDelegate")]
-	public partial class AppDelegate : UIApplicationDelegate
+	public class FacebookRootViewController : UINavigationController
 	{
-		UIWindow _Window;
-		FacebookRootViewController _RootViewController;
-
-		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+		
+		public FacebookRootViewController()
+			: base()
 		{
-			_Window = new UIWindow(UIScreen.MainScreen.Bounds);
-			_RootViewController = new FacebookRootViewController();
-			_Window.RootViewController = _RootViewController;
+			
+		}
+		
+		public override void LoadView()
+		{
+			base.LoadView();
+			
+			_AuthClient = new FacebookOAuthClient() {
+				AppId = AppId,
+				AppSecret = AppSecret,
+			};
+			
+			var loginParms = new Dictionary<string, object>();
+			loginParms["response_type"] = "code";
+			
+			if(string.IsNullOrWhiteSpace(ExtendedPermissions) == false) {
+				loginParms["scope"] = ExtendedPermissions;	
+			}
 			
 			
 			
-			_Window.MakeKeyAndVisible();
-			
-			return true;
+		}
+		
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+		}
+		
+		public override void ViewWillLayoutSubviews()
+		{
+			base.ViewWillLayoutSubviews();
 		}
 	}
+	
 }
 

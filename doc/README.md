@@ -1,6 +1,6 @@
 <h1> Facebook MonoTouch </h1>
 
-A MonoTouch compatible version of the C# Bindings for the Facebook Graph API courtesy of the 3rd party [Facebook C# SDK] (http://facebooksdk.codeplex.com/)
+A MonoTouch / Mono for Android compatible version of the C# Bindings for the Facebook Graph API courtesy of the 3rd party [Facebook C# SDK] (http://facebooksdk.codeplex.com/)
 
 ## Installation
 
